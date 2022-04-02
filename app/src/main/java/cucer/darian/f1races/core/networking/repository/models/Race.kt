@@ -1,4 +1,4 @@
-package cucer.darian.f1races.models
+package cucer.darian.f1races.core.networking.repository.models
 
 import com.google.gson.annotations.SerializedName
 

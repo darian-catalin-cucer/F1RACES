@@ -1,6 +1,6 @@
-package cucer.darian.f1races.networking
+package cucer.darian.f1races.core.networking.networking
 
-import cucer.darian.f1races.models.F1RacesData
+import cucer.darian.f1races.core.networking.repository.models.F1RacesData
 import retrofit2.Call
 import retrofit2.http.GET
 

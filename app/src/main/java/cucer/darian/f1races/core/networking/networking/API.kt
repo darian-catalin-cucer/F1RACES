@@ -1,4 +1,4 @@
-package cucer.darian.f1races.networking
+package cucer.darian.f1races.core.networking.networking
 
 import retrofit2.http.GET
 import retrofit2.http.Path

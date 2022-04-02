@@ -1,4 +1,4 @@
-package cucer.darian.f1races.models
+package cucer.darian.f1races.core.networking.repository.models
 
 data class F1RacesComplex(
     val clouds: Clouds,
