@@ -21,13 +21,6 @@ interface Api {
 
 class APIImpl: Api {
 
-    init {
-        val retrofit: Retrofit = Retrofit.Builder().baseUrl(Api.BASE_URL)
-            .addConverterFactory(GsonConverterFactory.create())
-            .build()
-        retrofit.create(Api::class.java)
-    }
-
     override fun getUser(username: String) {
         TODO("Not yet implemented")
     }

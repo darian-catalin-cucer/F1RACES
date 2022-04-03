@@ -1,12 +1,12 @@
 package cucer.darian.f1races.koin
 
 import cucer.darian.f1races.core.networking.repository.Repository
-import cucer.darian.f1race.core.networking.API
-import cucer.darian.f1racesusersearch.core.networking.VolleyManager
-import cucer.darian.f1racesusersearch.core.repository.Repository
-import cucer.darian.f1racesusersearch.core.repository.RepositoryImpl
-import cucer.darian.f1racesusersearch.screens.details.UserDetailsViewModel
-import cucer.darian.f1racesusersearch.screens.search.UserSearchViewModel
+import cucer.darian.f1races.core.networking.API
+import cucer.darian.f1races.core.networking.VolleyManager
+import cucer.darian.f1races.core.repository.Repository
+import cucer.darian.f1races.core.repository.RepositoryImpl
+import cucer.darian.f1races.core.screens.details.UserDetailsViewModel
+import cucer.darian.f1races.core.screens.search.UserSearchViewModel
 import org.koin.dsl.module
 
 val viewModelsModule = module{
