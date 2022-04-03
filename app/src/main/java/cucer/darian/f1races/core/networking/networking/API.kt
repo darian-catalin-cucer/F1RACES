@@ -1,6 +1,9 @@
-package cucer.darian.f1races.core.networking.networking
+package cucer.darian.f1races.core.networking
 
-interface Api {
+interface API {
+
+    suspend fun getUser(query: String, callback: APICallbackInterface)
+    suspend fun (userId: String, callback: APICallbackInterface)
 
     companion object {
         const val BASE_URL = "https://ergast.com/api/f1/drivers/alonso/circuits/monza/races.json"
@@ -13,7 +16,7 @@ interface Api {
     fun groupList(@Path("id") id: Int, @Query("sort") sort: String)
 }
 
-class APIImpl: Api {
+class APIImpl: API {
 
     override fun getUser(username: String) {
         TODO("Not yet implemented")

@@ -1,33 +1,32 @@
 package cucer.darian.f1races
 
-import android.app.Activity
 import android.os.Bundle
-import android.util.Log
-import android.widget.TextView
-import cucer.darian.f1races.core.networking.repository.models.F1RacesData
-import cucer.darian.f1races.core.networking.networking.ApiInterface
-import java.lang.StringBuilder
+import com.android.volley.Request
+
+import androidx.appcompat.app.AppCompatActivity
+import com.android.volley.Response
+import com.android.volley.toolbox.StringRequest
 
 //public static final BASE_URL = ""
 const val BASE_URL = "https://ergast.com/"
-class F1RacesActivity: Activity() {
+class F1RacesActivity: AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_f1_races)
-        getMyData()
-    }
+        setSupportActionBar(toolbar)
 
-                findViewById<TextView>(R.id.txtid).text = myStringBuilder
+        //Make a string request
+
+            val stringRequirest = StringRequest {
+                Request.Method.GET,
+                "http://ergast.com/api/f1/drivers.json?callback=myParser"
+                Response Listener ()
+                //
+
+            },
+        Response.ErrorListener {volleyError->
+            // Volley Error, if any
 
             }
-
-            override fun onFailure(call: Call<List<F1RacesData>?>, t: Throwable) {
-                Log.d("MainActivity", "onFailure:" + t.message)
-
-
-            }
-        })
-
     }
-}

@@ -1,4 +1,4 @@
-package cucer.darian.f1races.core.networking.repository.models
+package cucer.darian.f1races.core.repository.models
 
 data class F1RacesData(
     val calctime: Double,

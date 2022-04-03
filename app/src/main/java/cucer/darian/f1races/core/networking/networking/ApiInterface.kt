@@ -1,6 +1,4 @@
-package cucer.darian.f1races.core.networking.networking
-
-import cucer.darian.f1races.core.networking.repository.models.F1RacesData
+package cucer.darian.f1races.core.networking
 
 interface ApiInterface {
 

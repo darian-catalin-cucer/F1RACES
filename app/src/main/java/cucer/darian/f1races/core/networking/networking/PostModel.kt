@@ -1,4 +1,4 @@
-package cucer.darian.f1races.core.networking.networking
+package cucer.darian.f1races.core.networking
 
 class PostModel{
 }

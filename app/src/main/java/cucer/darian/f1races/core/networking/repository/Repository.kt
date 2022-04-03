@@ -1,4 +1,4 @@
-package cucer.darian.f1races.core.networking.repository
+package cucer.darian.f1races.core.repository
 
 interface Repository {
 }
