@@ -12,11 +12,11 @@
         app:exitAnim="@anim/slide_out_left"/>
 
     <fragment android:id="@+id/search_for_user"
-        android:name="dalian.razvan.cucer.ergastusersearch.screens.search.UserSearchFragment"
+        android:name="cucer.darian.f1races.ui.F1RacesListingFragment"
         android:label="search_for_user"/>
 
     <fragment android:id="@+id/user_details"
-        android:name="dalian.razvan.cucer.ergastusersearch.screens.details.UserDetailsFragment"
+        android:name="cucer.darian.f1races.ui.F1RacesListingFragment"
         android:label="user_details"/>
 
 </navigation>
