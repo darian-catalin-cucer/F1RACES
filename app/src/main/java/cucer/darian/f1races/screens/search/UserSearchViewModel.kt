@@ -8,10 +8,8 @@ import androidx.lifecycle.viewModelScope
 import androidx.navigation.Navigation
 import cucer.darian.f1races.core.repository.Repository
 import cucer.darian.f1races.R
-import cucer.darian.f1races.core.networking.networking.error.ErrorCallback
-import cucer.darian.f1races.core.repository.Repository
+import cucer.darian.f1races.core.networking.error.ErrorCallback
 import cucer.darian.f1races.core.repository.models.F1User
-import cucer.darian.f1races.screens.search.list.TwitterUsersAdapter
 import kotlinx.coroutines.launch
 
 class UserSearchViewModel(private val repository: Repository): ViewModel() {

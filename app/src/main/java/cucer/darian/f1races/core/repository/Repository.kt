@@ -1,7 +1,6 @@
 package cucer.darian.f1races.core.repository
 
-import cucer.darian.f1races.core.networking.networking.error.ErrorCallback
-import cucer.darian.f1races.core.networking.repository.F1RacesData
+import cucer.darian.f1races.core.networking.error.ErrorCallback
 import cucer.darian.f1races.screens.search.list.Callback
 
 interface Repository {

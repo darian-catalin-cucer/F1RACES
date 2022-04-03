@@ -1,13 +1,9 @@
 package cucer.darian.f1races.screens.details
 
-import android.widget.ImageView
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import coil.load
-import coil.transform.CircleCropTransformation
-import cucer.darian.f1races.R
-import cucer.darian.f1races.core.networking.networking.error.ErrorCallback
+import cucer.darian.f1races.core.networking.error.ErrorCallback
 import cucer.darian.f1races.core.repository.Repository
 import cucer.darian.f1races.screens.search.list.UsersAdapter
 import kotlinx.coroutines.launch

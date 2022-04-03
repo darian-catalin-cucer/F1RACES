@@ -8,7 +8,7 @@ import com.android.volley.Response
 import com.android.volley.toolbox.StringRequest
 
 //public static final BASE_URL = ""
-const val BASE_URL = "https://ergast.com/"
+const val BASE_URL = "https://ergast.com/api/f1"
 class F1RacesActivity: AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {

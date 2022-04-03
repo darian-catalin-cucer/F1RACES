@@ -7,7 +7,7 @@ import com.android.volley.VolleyError
 import com.android.volley.toolbox.Volley
 import com.google.gson.Gson
 import com.google.gson.JsonSyntaxException
-import cucer.darian.f1races.core.error.ErrorResponse
+import cucer.darian.f1races.core.networking.error.ErrorResponse
 
 object VolleyManager: API {
 

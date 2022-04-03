@@ -1,11 +1,9 @@
 package cucer.darian.f1races.core.repository
 
-import android.graphics.Insets.add
-import android.text.method.TextKeyListener.clear
 import android.util.Log
 import cucer.darian.f1races.core.networking.API
 import cucer.darian.f1races.core.networking.APICallbackInterface
-import cucer.darian.f1races.core.networking.networking.error.ErrorCallback
+import cucer.darian.f1races.core.networking.error.ErrorCallback
 import cucer.darian.f1races.core.repository.models.F1RacesData
 import cucer.darian.f1races.core.repository.models.F1User
 import cucer.darian.f1races.core.repository.models.Race
