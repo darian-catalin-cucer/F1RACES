@@ -18,15 +18,13 @@ class F1RacesActivity: AppCompatActivity() {
 
         //Make a string request
 
-            val stringRequirest = StringRequest {
-                Request.Method.GET,
-                "http://ergast.com/api/f1/drivers.json?callback=myParser"
-                Response Listener ()
-                //
-
-            },
-        Response.ErrorListener {volleyError->
+        val stringRequirest = StringRequest {
+            Request.Method.GET
+            "http://ergast.com/api/f1/drivers.json?callback=myParser"
+        }
+        Response.ErrorListener { volleyError ->
             // Volley Error, if any
 
-            }
+        }
     }
+}

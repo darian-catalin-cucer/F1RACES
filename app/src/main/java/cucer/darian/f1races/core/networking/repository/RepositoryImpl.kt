@@ -1,20 +1,27 @@
 package cucer.darian.f1races.core.repository
 
+import android.graphics.Insets.add
+import android.text.method.TextKeyListener.clear
 import android.util.Log
 import cucer.darian.f1races.core.networking.API
 import cucer.darian.f1races.core.networking.APICallbackInterface
+import cucer.darian.f1races.core.networking.networking.error.ErrorCallback
+import cucer.darian.f1races.core.repository.models.F1RacesData
 import cucer.darian.f1races.core.repository.models.F1User
+import cucer.darian.f1races.core.repository.models.Race
+import cucer.darian.f1races.screens.search.list.Callback
 import cucer.darian.f1races.utils.Constants
 import org.json.JSONObject
 
 class RepositoryImpl(val api: API): Repository {
 
-    private lateinit var selectedUser: F1User
+    private lateinit var selectedUser: F1RacesData
     private val users = arrayListOf<F1User>()
+    private val users = arrayListOf<Race>()
 
     override suspend fun getUsers(
         query: String,
-        callback: Call,
+        callback: Callback,
         errorCallback: ErrorCallback
     ) {
         api.getUser(query, object : APICallbackInterface{
@@ -46,37 +53,30 @@ class RepositoryImpl(val api: API): Repository {
         }
     }
 
-    override suspend fun (callback: , errorCallback: ) {
-        api.(selectedUser.id, object : APICallbackInterface{
+    override suspend fun getUser(callback: Callback, errorCallback: ErrorCallback) {
+        api.getUser(selectedUser.id, object : APICallbackInterface{
             override fun onSuccess(jsonObject: JSONObject) {
                 (jsonObject)
                 callback.setItems()
-                if (.size == 0) {
-                    errorCallback.onError("User didn't .")
-                }
-            }
-
-            override fun onError(error: String) {
-                errorCallback.onError(error)
             }
 
         })
     }
 
     private fun (jsonObject: JSONObject) {
-        .clear()
+        users.clear()
         Log.e(javaClass.simpleName, jsonObject.toString())
         val jsonArray = jsonObject.optJSONArray(Constants.DATA)
         jsonArray?.let {
             (0 until it.length()).forEach { i ->
-                .add((it.optJSONObject(i)))
+                users.add((it.optJSONObject(i)))
             }
         }
     }
 
-    override fun setSelectedUser(user: ) {
+    override fun setSelectedUser(user: F1RacesData) {
         selectedUser = user
     }
 
-    override fun getSelectedUser():   = selectedUser
+    override fun getSelectedUser(): selectedUser {}
 }

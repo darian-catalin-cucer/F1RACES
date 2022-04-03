@@ -4,11 +4,11 @@ import android.os.Bundle
 import android.view.View
 import cucer.darian.f1races.R
 import cucer.darian.f1races.core.base.BaseFragment
-import cucer.darian.f1races.databinding.FragmentUserSearchBinding
 import kotlinx.android.synthetic.main.fragment_user_search.*
 import org.koin.core.inject
+import cucer.darian.f1races.databinding.FragmentUserSearchBinding as FragmentUserSearchBinding1
 
-class UserSearchFragment: BaseFragment<UserSearchViewModel, FragmentUserSearchBinding>() {
+class UserSearchFragment: BaseFragment<UserSearchViewModel, FragmentUserSearchBinding1>() {
 
     override val viewModel: UserSearchViewModel by inject()
 

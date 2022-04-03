@@ -5,11 +5,7 @@
     app:startDestination="@id/search_for_user">
 
     <action android:id="@+id/go_to_details"
-        app:destination="@id/user_details"
-        app:popEnterAnim="@anim/slide_in_left"
-        app:popExitAnim="@anim/slide_out_right"
-        app:enterAnim="@anim/slide_in_right"
-        app:exitAnim="@anim/slide_out_left"/>
+        app:destination="@id/user_details" />
 
     <fragment android:id="@+id/search_for_user"
         android:name="cucer.darian.f1races.ui.F1RacesListingFragment"

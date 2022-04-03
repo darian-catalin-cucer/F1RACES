@@ -5,4 +5,6 @@ data class F1RacesData(
     val cnt: Int,
     val cod: String,
     val list: List<Race>,
-)
+) {
+    val id: Unit
+}

@@ -17,6 +17,5 @@ class UserDetailsFragment: BaseFragment<UserDetailsViewModel, FragmentUserDetail
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         viewModel.loadProfilePicture(profile_picture)
-        viewModel.()
     }
 }

@@ -42,7 +42,7 @@ object VolleyManager: API {
         get(Endpoints.BASE_URL + Endpoints.USERS + Endpoints.BY_USERNAMES + query + Endpoints.WITH_PROFILE_PICTURES, callback)
     }
 
-    override suspend fun (userId: String, callback: APICallbackInterface) {
-        get(Endpoints.BASE_URL + Endpoints.USERS + userId + Endpoints., callback)
-    }
+    //override suspend fun (userId: String, callback: APICallbackInterface) {
+      //  get(Endpoints.BASE_URL + Endpoints.USERS + userId, callback)
+    //}
 }
